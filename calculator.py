@@ -1,8 +1,15 @@
-x = float(input("What's x? "))
-y = float(input("What's y? "))
+def main():
+    x = int(input("What's x? "))
+    y = int(input("What's y? "))
 
-# Rounds the result with 2 digits after the comma
-result = round(x / y, 2)
+    # Rounds the result with 2 digits after the comma
+    result = round(x / y, 2)
 
-# It is printing result within 2 digits after the comma, even if it doesnt exists
-print(f"{result:.2f}")
+    # It is printing result within 2 digits after the comma, even if it doesnt exists
+    print(f"{result:.2f}")
+    print(f"{result:.2f}").square(result)
+
+def square(n):
+    return n*n
+
+main()
